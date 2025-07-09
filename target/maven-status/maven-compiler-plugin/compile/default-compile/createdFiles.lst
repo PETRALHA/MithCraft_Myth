@@ -1,0 +1,9 @@
+com/mithcraft/myth/commands/MythCommandTabCompleter.class
+com/mithcraft/myth/utils/MessageUtils.class
+com/mithcraft/myth/MithCraftMyth.class
+com/mithcraft/myth/utils/PlaceholderAPIHook.class
+com/mithcraft/myth/managers/LanguageManager.class
+com/mithcraft/myth/commands/MythCommand.class
+com/mithcraft/myth/events/PlayerDeathListener.class
+com/mithcraft/myth/managers/MythManager.class
+com/mithcraft/myth/managers/ConfigManager.class

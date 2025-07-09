@@ -1,0 +1,47 @@
+# Mensagens do MithCraft Myth
+# Formatação: & para cores tradicionais | <#HEX> para cores hex | <hover:show_text:'texto'> para hover
+# Suporte a <prefix> (Prefixo definido para o plugin em config.yml)
+
+commands:
+  no-permission: "<hover:show_text:'&cVocê não tem permissão!'>&c❌ &7Você não tem permissão para este comando."
+  player-offline: "<hover:show_text:'&cJogador offline ou inválido!'>&c❌ &7Jogador não encontrado ou offline."
+  invalid-usage: "<hover:show_text:'&cUso correto: /myth set <jogador>'>&c❌ &7Uso incorreto. &f/myth help &7para ajuda."
+  
+  help:
+    header: "<gradient:#5e4fa2:#f79459>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[ &fAjuda MithCraftMyth &6]⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</gradient>"
+    lines:
+    - " &6/myth &8- &7Mostra o mito atual"
+    - " &6/myth set <jogador> &8- &7Define um novo mito"
+    - " &6/myth setrandom &8- &7Escolhe um mito aleatório"
+    - " &6/myth unset <jogador> &8- &7Remove o título de mito"
+    - " &6/myth reload &8- &7Recarrega o plugin"
+    footer: "<gradient:#5e4fa2:#f79459>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</gradient>"
+  
+  myth:
+    current: "<hover:show_text:'&7Tornou-se mito em: &f%myth_date% %myth_hours%'>&6🌟 &eO Mito atual é: &b%myth_current% &7(desde: &f%myth_time%&7)</hover>"
+    none: "<hover:show_text:'&7Nenhum jogador é o mito atualmente'>&6🌟 &eNão há nenhum Mito atualmente</hover>"
+  
+  set:
+    success: "<hover:show_text:'&7Novo mito definido!'>&a✅ &7Você definiu &b%player% &7como o novo Mito!</hover>"
+    already-myth: "<hover:show_text:'&cEste jogador já é o mito!'>&c❌ &7Este jogador já é o Mito!</hover>"
+  
+  setrandom:
+    success: "<hover:show_text:'&7Mito escolhido aleatoriamente!'>&a✅ &7O novo Mito escolhido aleatoriamente é: &b%player%</hover>"
+  
+  unset:
+    success: "<hover:show_text:'&7Mito removido com sucesso!'>&a✅ &7Você removeu o título de Mito de &b%player%</hover>"
+    not-myth: "<hover:show_text:'&cEste jogador não era o mito!'>&c❌ &7Este jogador não era o Mito!</hover>"
+  
+  reload:
+    success: "<hover:show_text:'&7Plugin recarregado com sucesso!'>&a✅ &7Plugin recarregado com sucesso!</hover>"
+  
+  version:
+    message: "<hover:show_text:'&7Clique para abrir o GitHub'><click:open_url:'https://github.com/PETRALHA/MithCraft_Myth'>&6🌟 &7Versão: &f%version% &8| &7Autor: &bPETRALHA</click></hover>"
+
+broadcasts:
+  new-myth: "<gradient:#ff5f6d:#ffc371>✧･ﾟ: *✧･ﾟ:* &6&lNOVO MITO! &f%player% &7derrotou &c%myth_previous% &ee se tornou o novo Mito! &7(Tempo anterior: &f%myth_time%&7) *:･ﾟ✧*:･ﾟ✧</gradient>"
+  first-myth: "<gradient:#00c9ff:#92fe9d>✧･ﾟ: *✧･ﾟ:* &b&lPRIMEIRO MITO! &f%player% &7foi escolhido como o primeiro Mito do servidor! *:･ﾟ✧*:･ﾟ✧</gradient>"
+
+pvp:
+  become-myth: "<hover:show_text:'&7Você derrotou o mito anterior!'><gradient:#fbd786:#f7797d>&6🌟 &lPARABÉNS! &r&fVocê derrotou &c%myth_previous% &ee se tornou o novo MITO!</gradient></hover>"
+  lost-myth: "<hover:show_text:'&7Você foi derrotado por %killer%'><gradient:#a8c0ff:#3f2b96>&c☠ &lDERROTA! &r&7Você perdeu o título de MITO para &f%killer%</gradient></hover>"

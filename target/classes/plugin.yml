@@ -1,0 +1,59 @@
+name: MithCraftMyth
+main: com.mithcraft.myth.MithCraftMyth
+version: 1.0.0
+api-version: 1.21
+authors: [PETRALHA]
+description: Myth system for Purpur servers where players can become THE MYTH by defeating the current one in PvP
+website: https://github.com/PETRALHA/MithCraft_Myth
+
+commands:
+  myth:
+    description: Main command for MithCraft Myth system
+    aliases: [mito]
+    usage: /myth [set|setrandom|unset|help|reload|version]
+    permission: mithcraftmyth.command.base
+
+permissions:
+  mithcraftmyth.*:
+    description: Gives access to all MithCraftMyth commands
+    children:
+      mithcraftmyth.command.base: true
+      mithcraftmyth.command.admin: true
+      mithcraftmyth.command.set: true
+      mithcraftmyth.command.reload: true
+      mithcraftmyth.command.help: true
+      mithcraftmyth.command.version: true
+  
+  mithcraftmyth.command.base:
+    description: Allows using basic myth commands (/myth)
+    default: true
+  
+  mithcraftmyth.command.help:
+    description: Allows using the help command
+    default: op
+  
+  mithcraftmyth.command.version:
+    description: Allows checking the plugin version
+    default: op
+  
+  mithcraftmyth.command.admin:
+    description: Gives access to admin commands
+    default: op
+  
+  mithcraftmyth.command.set:
+    description: Allows setting/unsetting the myth
+    default: op
+    children:
+      mithcraftmyth.command.setrandom: true
+  
+  mithcraftmyth.command.setrandom:
+    description: Allows setting myth randomly
+    default: op
+  
+  mithcraftmyth.command.reload:
+    description: Allows reloading the plugin
+    default: op
+
+libraries:
+  - com.github.luben:zstd-jni:1.5.5-11
+  - org.lz4:lz4-java:1.8.0

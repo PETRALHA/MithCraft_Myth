@@ -1,0 +1,9 @@
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/managers/MythManager.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/utils/PlaceholderAPIHook.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/MithCraftMyth.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/managers/LanguageManager.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/utils/MessageUtils.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/commands/MythCommand.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/events/PlayerDeathListener.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/commands/MythCommandTabCompleter.java
+/workspaces/MithCraft_Myth/src/main/java/com/mithcraft/myth/managers/ConfigManager.java

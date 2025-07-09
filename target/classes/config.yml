@@ -1,0 +1,54 @@
+# MithCraft Myth Configuration
+# Docs: https://github.com/PETRALHA/MithCraft_Myth
+
+# INTERNAL Placeholders (always available):
+# %myth_current%, %myth_previous%, %myth_date%, %myth_hours%, %myth_time%
+
+# Placeholders for PlaceholderAPI (optional):
+# %mithcraftmyth_current%, %mithcraftmyth_time_<format>%, etc.
+
+# ========================
+#  Core Settings
+# ========================
+settings:
+  debug: false # Enable debug logs (true/false)
+  lang: pt-BR # Default language (pt-BR/en-US)
+  
+  messages:
+    prefix: '<gradient:#5e4fa2:#f79459>&8[</gradient><gradient:#f79459:#fc4a1a>&bMYTH</gradient><gradient:#5e4fa2:#f79459>&8]</gradient> &7' # Plugin message prefix
+    prefix-enabled: true # Enable prefix globally
+
+# ========================
+#  MYTH Data
+# ========================
+myth:
+  current: null # UUID of current myth player
+  previous: null # UUID of previous myth player
+  last-change: 0 # Timestamp of last myth change (milliseconds)
+
+# ========================
+#  Rewards System
+# ========================
+rewards:
+  on_become:
+    active: true # Enable rewards when becoming MYTH
+    commands:
+    - lp user %myth_previous% parent remove myth
+    - lp user %myth_current% parent add myth
+    - eco give %myth_current% 100
+  
+  periodic:
+    active: false # Enable periodic rewards
+    interval: 30 # Minutes between rewards
+    commands:
+    - eco give %myth_current% 50
+
+# ========================
+#  PvP Settings
+# ========================
+pvp:
+  check-world: true # Only allow myth changes in specific worlds
+  worlds:
+  - world
+  - world_nether
+  - world_the_end

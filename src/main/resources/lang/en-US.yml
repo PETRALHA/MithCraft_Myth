@@ -1,0 +1,47 @@
+# MithCraft Myth Messages
+# Supports: & colors | <#HEX> | <hover> | <click> | <gradient>
+# Support for <prefix> (Prefix set for the plugin in config.yml)
+
+commands:
+  no-permission: "<hover:show_text:'&cNo permission!'>&c❌ &7You don't have permission for this command."
+  player-offline: "<hover:show_text:'&cPlayer offline!'>&c❌ &7Player not found or offline."
+  invalid-usage: "<hover:show_text:'&cCorrect usage: /myth set <player>'>&c❌ &7Invalid usage. &f/myth help &7for assistance."
+  
+  help:
+    header: "<gradient:#5e4fa2:#f79459>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[ &fMithCraftMyth Help &6]⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</gradient>"
+    lines:
+    - " &6/myth &8- &7Show current Myth"
+    - " &6/myth set <player> &8- &7Set new Myth"
+    - " &6/myth setrandom &8- &7Choose random Myth"
+    - " &6/myth unset <player> &8- &7Remove Myth title"
+    - " &6/myth reload &8- &7Reload plugin"
+    footer: "<gradient:#5e4fa2:#f79459>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</gradient>"
+  
+  myth:
+    current: "<hover:show_text:'&7Became Myth on: &f%myth_date% %myth_hours%'>&6🌟 &eCurrent Myth: &b%myth_current% &7(since: &f%myth_time%&7)</hover>"
+    none: "<hover:show_text:'&7No current Myth'>&6🌟 &eThere is no current Myth</hover>"
+  
+  set:
+    success: "<hover:show_text:'&7New Myth set!'>&a✅ &7You set &b%player% &7as the new Myth!</hover>"
+    already-myth: "<hover:show_text:'&cThis player is already Myth!'>&c❌ &7This player is already the Myth!</hover>"
+  
+  setrandom:
+    success: "<hover:show_text:'&7Random Myth chosen!'>&a✅ &7New randomly chosen Myth: &b%player%</hover>"
+  
+  unset:
+    success: "<hover:show_text:'&7Myth removed!'>&a✅ &7You removed Myth title from &b%player%</hover>"
+    not-myth: "<hover:show_text:'&cThis player wasn't Myth!'>&c❌ &7This player wasn't the Myth!</hover>"
+  
+  reload:
+    success: "<hover:show_text:'&7Plugin reloaded!'>&a✅ &7Plugin reloaded successfully!</hover>"
+  
+  version:
+    message: "<hover:show_text:'&7Click to open GitHub'><click:open_url:'https://github.com/PETRALHA/MithCraft_Myth'>&6🌟 &7Version: &f%version% &8| &7Author: &bPETRALHA</click></hover>"
+
+broadcasts:
+  new-myth: "<gradient:#ff5f6d:#ffc371>✧･ﾟ: *✧･ﾟ:* &6&lNEW MYTH! &f%player% &7defeated &c%myth_previous% &eand became the new Myth! &7(Previous time: &f%myth_time%&7) *:･ﾟ✧*:･ﾟ✧</gradient>"
+  first-myth: "<gradient:#00c9ff:#92fe9d>✧･ﾟ: *✧･ﾟ:* &b&lFIRST MYTH! &f%player% &7was chosen as server's first Myth! *:･ﾟ✧*:･ﾟ✧</gradient>"
+
+pvp:
+  become-myth: "<hover:show_text:'&7You defeated the previous Myth!'><gradient:#fbd786:#f7797d>&6🌟 &lCONGRATULATIONS! &r&fYou defeated &c%myth_previous% &eand became the new MYTH!</gradient></hover>"
+  lost-myth: "<hover:show_text:'&7You were defeated by %killer%'><gradient:#a8c0ff:#3f2b96>&c☠ &lDEFEAT! &r&7You lost the MYTH title to &f%killer%</gradient></hover>"
